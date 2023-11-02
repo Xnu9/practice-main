@@ -1,108 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Practice Form</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <style>
-        .wrapcontant{   
+        
+      .wrapcontant {
             box-sizing: border-box;
             background: #fff;
             max-width: 960px;
             border-radius: 2px;
         }
-        .container-content{
+        .asdasdasd{
+            text-align: center;
+        }
+
+        .formbody {
             width: 700px;
-            background-image: url('https://zeevector.com/wp-content/uploads/Colorful-Background-HD.png');
+            background-color: rgb(170, 108, 173);
+            height: 520px;
+            margin: auto;
+            /* width: 800px; */
+            align-content:center;
+            text-align: justify;  
         }
-        .backgroundcolor{
-            background-color: #fff;
+
+        .backgroundcolor {
+            background-color: #fff98a;
         }
+
         .outerBorder {
-            width: 1000px;
-            border:none;
+            border: none;
             margin: auto;
             margin-top: 150px
         }
+
         .non_border {
-            background-color: aliceblue;
+            background-color: rgb(239, 242, 244);
             border-style: none;
+            transition:0.4s;
         }
+
         .container {
             padding: 10px;
             margin-bottom: 20px;
-            border-width: 200px;
+            
         }
+
         .center {
             text-align: center;
             padding: 8px;
             margin-top: 20px;
-            margin-left: 300px;
         }
+
         .newcontainer {
             width: 500px;
         }
 
-        .class{
-            width:900px;
-        }
-        .class2
-        {
+        .class {
             width: 900px;
         }
-        .align{
-            vertical-align: left ;
+
+        .class2 {
+            width: 100%;
         }
+
+        .align {
+            vertical-align:left;
+        }
+        .fldskoinlinekarnekeliye{
+            display: flex;
+            gap: 40px;
+            /* padding-left:  30px; */
+            margin: auto;
+            justify-content: center;
+        }
+.spaceing{
+    padding-left: 30px;
+}
+.non_border:hover{
+    cursor: pointer;
+}
+ .non_border:active{
+    opacity: 0.7;
+ }
+body{
+
+            background-image: url('https://zeevector.com/wp-content/uploads/Colorful-Background-HD.png');
+   
+}
+
+c1{
+    border-width: 200px;
+    height: 120px;
+}
+.textcenter1{
+padding-left: 40px;
+margin-left: 20px;
+width: 170px;
+}
+.textcenter2{
+    padding-right: 50px;
+    margin-left: 10px;
+    width: 170px;
+}
     </style>
-
-</head>
-
-<body>
-    <div class="aligncenter">
-
-    <div class="container-content">
-        
-    <form>
-        <div class="outerBorder">
-            <span class="backgroundcolor"></span>
-
-            <div>
-                <div class="class">
-                <!-- <div> -->
-                    <label for="name">Tell us your name</label><br>
-                    <input type="text" id="name" placeholder="Enter your name" autocapitalize="off"
-                        class="non_border container">
-                    <!-- </div> -->
-                    <!-- <div class="class2"> -->
-                    <label for="emil" >Enter your email <br> </label>
-                    <span><input type="tesxt" name="email" id="email" placeholder="Enter your" class="non_border 
-                         container " style="float:center;"
-                        > </span>
-                </div>
-
-                </div>
+    <section class="formbody">
+        <form class="asdasdasd">
+            <div class="outerBorder">
+                <span class="backgroundcolor"></span>
+    
+                <div>
+                    <h1 style="padding-top: 20px ;">GET IN TOUCH </h1>
+                            <br>
+                    <div class="fldskoinlinekarnekeliye">
+                       
+                        <div>
+                            
+                        <label for="name">Tell us your name</label><br>
+                        <input type="text" id="name" placeholder="Enter your name" autocapitalize="off" class="non_border container textcenter1">
+                            </div>
+                        <div class="test2">
+                            <label for="emil">Enter your email <br> </label>
+                            <input type="tesxt" name="email" id="email" placeholder="Enter your" class="non_border 
+                         container align c1 textcenter2 ">
                         </div>
-            <div>
-                <label for="webside"> Your website:</label><br>
-                <input type="text" name="webside" id="webside" placeholder="http://" class="non_border container newcontainer">
+                        
+                    </div>
+    
+                </div>
             </div>
-            <div>
+            <div class="spaceing">
+                <label for="webside"> Your website:</label><br>
+                <input type="text" name="webside" id="webside" placeholder="http://" style="width: 180;" class="non_border container newcontainer">
+            </div>
+            <div class="spaceing">
                 <label for="text">Message</label>
                 <br>
-                <textarea name="Message" id="text" cols="26" rows="5" placeholder="Your Messagehere...."
-                    class="non_border newcontainer"></textarea>
+                <textarea name="Message" id="text" cols="26" rows="5" placeholder="Your Messagehere...." class="non_border newcontainer"></textarea>
             </div>
+    
+            <input type="submit" name="submit" style= "background-color: rgb(237, 250, 53); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 20px ; width: 90px; height: 50px;font-size: 20px;"  class="non_border center">
 
-            <input type="submit" name="submit" style="background-color: rgb(237, 250, 53);" class="non_border center">
-        </div>
-        
-    </form>
-
-</div>
-
-</div>
-</div>
+            </form>
+           
+    </section>
+    <div class="backbody">   
+    </div>
 </body>
-</html>
+</html> 
