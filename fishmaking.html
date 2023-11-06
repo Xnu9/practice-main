@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+body {
+    background-color: #87CEEB; /* Light blue background color for the ocean */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fish {
+
+  width: 291px; /* Width of the fish */
+    height: 118px;
+    background-color: #edbd3d;/* Height of the fish */
+    border-radius: 120% 415% 632% 70% / 70% 68% 152% 151%; /* Fish body color (salmon) */
+    position: relative;/* Create a fish-like shape */
+    animation: swim 2s linear infinite alternate;/* Add swimming animation with alternate up-down motion */
+    transform: scaleX(-1);/* Flip the fish horizontally */
+}
+
+
+
+.tail {
+    width: 30px; /* Width of the tail */
+    height: 20px; /* Height of the tail */
+    background-color: #FFA07A; /* Tail color (same as body) */
+    border-radius: 0 0 50% 50%; /* Create a triangular tail shape */
+    position: absolute;
+    top: 50%;
+    right: -30px; /* Position the tail on the right side */
+    transform: translateY(-50%);
+}
+
+.eye {
+
+  width: 25px;
+    height: 25px;
+    background-color: white; /* Eye color */
+    border-radius: 154%;/* Round eye shape */
+    position: absolute;
+    top: 69%;
+    left: 15%; /* Adjust the eye position */
+    transform: translate(-50%, -50%);
+}
+
+.pupil {
+    width: 12px; /* Width of the pupil */
+    height: 12px; /* Height of the pupil */
+    background-color: black; /* Pupil color */
+    border-radius: 50%; /* Round pupil shape */
+    position: absolute;
+    top: 63%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(-20px, 0);
+    }
+    50% {
+        transform: translate(-20px, 60px); /* Move up */
+    }
+    100% {
+        transform: translate(-20px, 0);
+    }
+}
+
+
+</style>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+      <div class="fish">
+          <div class="body">
+            <div</div>
+              <div class="eye">
+                  <div class="pupil"></div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
+  
+</body>
+</html>
