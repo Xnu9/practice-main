@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubes Making</title>
+  <style>
+    body {
+      margin: 10px;
+      background-color: white;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: #61327a; /* Change the background color as needed */
+      position: relative;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      margin-right: 10px; /* Add some space between squares */
+    }
+
+    .square::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 2px; /* Border width */
+      background-color: #000; /* Border color */
+    }
+
+    .container {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+</body>
+</html>

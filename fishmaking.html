@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>fish floating </title>
 </head>
 <style>
 body {
-    background-color: #87CEEB; /* Light blue background color for the ocean */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  
+  margin: 0px;
+    background-color: rgb(255, 255, 255); /* Light blue background color for the ocean */
 }
 
 .fish {
@@ -21,24 +18,29 @@ body {
     height: 118px;
     background-color: #edbd3d;/* Height of the fish */
     border-radius: 120% 415% 632% 70% / 70% 68% 152% 151%; /* Fish body color (salmon) */
-    position: relative;/* Create a fish-like shape */
+    /* position: relative;Create a fish-like shape */
     animation: swim 2s linear infinite alternate;/* Add swimming animation with alternate up-down motion */
     transform: scaleX(-1);/* Flip the fish horizontally */
 }
-
-
-
-.tail {
-    width: 30px; /* Width of the tail */
-    height: 20px; /* Height of the tail */
-    background-color: #FFA07A; /* Tail color (same as body) */
-    border-radius: 0 0 50% 50%; /* Create a triangular tail shape */
-    position: absolute;
-    top: 50%;
-    right: -30px; /* Position the tail on the right side */
-    transform: translateY(-50%);
+.water{
+  width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+    background-color: blue;
 }
 
+
+.cylinder {
+    width: 91px;
+    height: 99px;
+    background-color: #ebbe47;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: -4px;
+    right: -73px;
+    right: -71px;
+    transform: translateY(0) rotate(46deg);
+}
 .eye {
 
   width: 25px;
@@ -61,6 +63,14 @@ body {
     left: 53%;
     transform: translate(-50%, -50%);
 }
+.namebox {
+    font-family: math;
+    background-color: hotpink;
+    display: inline-flex;
+    align-items: baseline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 @keyframes swim {
     0% {
@@ -74,7 +84,6 @@ body {
     }
 }
 
-
 </style>
 <body>
   <!DOCTYPE html>
@@ -83,14 +92,29 @@ body {
       <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+    <!--  complete div of fish  -->
       <div class="fish">
+        <div class="tail">
+<div class="cylinder"></div>
+        </div>
           <div class="body">
-            <div</div>
+            
               <div class="eye">
                   <div class="pupil"></div>
               </div>
           </div>
-      </div>
+        </div>
+<!-- background water color  -->
+        <div class="water">
+
+        </div>
+<br><br>
+              <!-- dispaly name and rool number  -->
+        <div class="namebox">
+          <h2>Name:</h2><p>zainab khan</p>
+          <h2>Roll no:</h2><p>L1f22bscs0873</p>
+        </div>
+      
   </body>
   </html>
   
