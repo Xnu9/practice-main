@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+
+body{
+
+margin: 10px;
+background-color: white;
+}
+
+.main-section{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.container {
+display: flex;
+gap: 15px;
+border: dotted black 9px;
+width: 20%;
+padding: 10px;
+padding-bottom: 79px;
+}
+
+/* outside of border  */
+.diamond {
+/* margin-top: 100px; */
+        width: 100px;
+        height: 100px;
+        background-color:#61327a; /* Change the background color as needed */
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+   
+    .square1 {
+width: 100px;
+padding-block: 24px;
+height: 109px;
+background-color: #fc0800;
+position: relative;
+}
+.square2 {
+padding-block: 24px;
+width: 100px;
+height: 109px;
+background-color: rgba(255, 221, 1, 0.844);
+position: relative;
+}
+.square3 {
+padding-block: 24px;
+width: 100px;
+height: 109px;
+background-color: #20d73859;
+position: relative;
+}
+.paralogram{
+  width: 50px;
+  height: 100px;
+  background-color: #fc0800;
+  clip-path: polygon(14% 53%, 0 26%, 78% 28%, 97% 55%);
+}
+.circle{
+
+}
+.triangle{
+  padding-block: 24px;
+  width: 150px;
+    height: 10px;
+  background-color: yellow;
+  clip-path: polygon(100% 45%, 38% 0, 41% 99%);
+}
+  </style>
+</head>
+<body>
+  
+  <div class="main-section">
+
+<div class="diamond"></div>
+<div class="container">
+
+  <div class="triangle"></div>
+  <div class="square1"></div>
+  <div class="square2"></div>
+  <div class="square3"></div>
+  <!-- <div class="paralogram"></div> -->
+</div>
+
+  </div>
+
+</body>
+</html>
+
+  
+
