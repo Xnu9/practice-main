@@ -27,7 +27,7 @@ gap: 15px;
 border: dotted black 9px;
 width: 20%;
 padding: 10px;
-padding-bottom: 79px;
+/* padding-bottom: 79px; */
 }
 
 /* outside of border  */
@@ -70,18 +70,18 @@ position: relative;
 }
 .circle{
   /* padding-block: 24px; */
-width: 100px;
-height: 100px;
+  width: 40px;
+    height: 40px;
 background-color: #20d73859;
 position: relative;
 clip-path: circle(38.3% at 50% 50%);
 }
 .triangle{
-  padding-block: 24px;
-  width: 150px;
+  padding: 10px;
+    width: 10%;
     height: 10px;
-  background-color: yellow;
-  clip-path: polygon(100% 45%, 38% 0, 41% 99%);
+    background-color: yellow;
+    clip-path: polygon(100% 45%, 38% 0, 41% 99%);
 }
   </style>
 </head>
@@ -92,11 +92,15 @@ clip-path: circle(38.3% at 50% 50%);
 <div class="diamond"></div>
 <div class="container">
 
-  <div class="triangle"></div>
-  <div class="square1"></div>
+  
+  <div class="square1">
+    <div class="triangle"></div>
+  </div>
   <div class="square2"></div>
-  <div class="square3"></div>
-  <div class="circle"></div>
+  <div class="square3">
+    <div class="circle"></div>
+  </div>
+  
   <!-- <div class="paralogram"></div> -->
 </div>
 
@@ -104,6 +108,3 @@ clip-path: circle(38.3% at 50% 50%);
 
 </body>
 </html>
-
-  
-
