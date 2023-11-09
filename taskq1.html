@@ -123,15 +123,29 @@ border-radius: 34px;
 }
 @media screen and (max-width: 600px) {
   .main-section {
-    gap: 100px;
+    gap: 50px;
   }
   .container{
     width: auto;
     gap: 35px;
+    padding: 25px;
   }
+  .circle{
+    display: none;
+  }
+  .triangle{
+    margin-left: -50px;
+  }
+  
 }
-@media only screen and (max-width: 599px) and (min-width: 360px)  {
+@media only screen and (max-width: 375px) and (min-width: 360px)  {
   .square3{
+    display: none;
+  }
+  .triangle{
+    display: none;
+  }
+  .circle{
     display: none;
   }
 }
