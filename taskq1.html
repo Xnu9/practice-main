@@ -24,10 +24,10 @@ align-items: center;
 .container {
 display: flex;
 flex-wrap: wrap;
-gap: 15px;
+gap: 5px;
 border: dotted black 9px;
-width: 25%;
-padding: 10px;
+padding: 2px;
+width: 17%;
 /* padding-bottom: 79px; */
 }
 
@@ -53,36 +53,74 @@ position: relative;
 padding-block: 24px;
 width: 100px;
 height: 109px;
-background-color: rgba(255, 221, 1, 0.844);
+background-color:  rgb(244 169 21 / 90%);
 position: relative;
 }
 .square3 {
 padding-block: 24px;
 width: 100px;
 height: 109px;
-background-color: #20d73859;
+background-color: #2e802ddb;
 position: relative;
 }
 .paralogram{
-  width: 50px;
-  height: 100px;
-  background-color: #fc0800;
-  clip-path: polygon(14% 53%, 0 26%, 78% 28%, 97% 55%);
+  width: 247px;
+    height: 9px;
+    padding-top: 26px;
+    padding-bottom: 50px;
+    background-color: pink;
+    margin-top: -14px;
+    clip-path:  polygon(8% 93%, 0 17%, 86% 14%, 96% 92%);
 }
 .circle{
   /* padding-block: 24px; */
   width: 40px;
     height: 40px;
-background-color: #20d73859;
+/* background-color: #20d73859; */
 position: relative;
-clip-path: circle(38.3% at 50% 50%);
+/* clip-path: circle(38.3% at 50% 50%); */
+
+
+border-radius: 34px;
+    /* color: blue; */
+    background-color: blue;
+    border: 6px solid black;
+    padding: 9px;
+    margin-top: -24px;
+    margin-left: -1px;
 }
+
 .triangle{
-  padding: 10px;
-    width: 10%;
+  padding: 23px;
+    width: 35%;
     height: 10px;
     background-color: yellow;
-    clip-path: polygon(100% 45%, 38% 0, 41% 99%);
+    clip-path: polygon(100% 43%, 41% 0, 41% 100%);
+    margin-left: -33px;
+    margin-top: -25px;
+    margin-bottom: 13px
+    
+}
+.second{
+  margin-top: 47px;
+}
+.third{
+
+  margin-top: 12px;
+}
+.forth{
+  margin-left: 10px;
+  /* -moz-transform: rotate(60deg);
+   */
+ rotate: 1 1 0 20deg ;
+ 
+}
+.circle1{
+ 
+  color: white;
+    margin-top: 9px;
+    text-align: center;
+
 }
 
   </style>
@@ -91,23 +129,51 @@ clip-path: circle(38.3% at 50% 50%);
 </head>
 <body>
   
+  
   <div class="main-section">
 
 <div class="diamond"></div>
+
+
+
 <div class="container">
 
   
   <div class="square1">
-    <div class="triangle"></div>
+
+    <div class="triangle">
+  </div> 
+  <div>
+    <p>First</p>
+  </div> 
   </div>
-  <div class="square2"></div>
+
+
+  <div class="square2">
+    <div class="second">
+      Second
+    </div>
+  </div>
+
   <div class="square3">
-    <div class="circle"></div>
+    <div class="circle">
+<div class="circle1"> circle</div>
+    </div>
+   <div>
+    <p class="third">Third</p>
+   </div>
   </div>
-    <div class="paralogram"></div>
   
+    <div class="paralogram" > 
+      <p class="forth">Forth</p>
+    
+    </div>
+    
 </div>
+
+
   </div>
+  
 
 </body>
 </html>
