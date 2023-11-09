@@ -116,11 +116,24 @@ border-radius: 34px;
  
 }
 .circle1{
- 
   color: white;
     margin-top: 9px;
     text-align: center;
 
+}
+@media screen and (max-width: 600px) {
+  .main-section {
+    flex-direction: column;
+  }
+  .container{
+    width: auto;
+    gap: 35px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .square3{
+    display: block;
+  }
 }
 
   </style>
