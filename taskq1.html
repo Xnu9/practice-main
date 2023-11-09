@@ -123,12 +123,12 @@ border-radius: 34px;
 }
 @media screen and (max-width: 600px) {
   .main-section {
-    gap: 50px;
+    gap: 20px;
   }
   .container{
-    width: auto;
-    gap: 35px;
-    padding: 25px;
+    width: 64%;
+    gap: 15px;
+    padding: 10px;
   }
   .circle{
     display: none;
@@ -139,13 +139,24 @@ border-radius: 34px;
   
 }
 @media only screen and (max-width: 375px) and (min-width: 360px)  {
-  .square3{
-    display: none;
-  }
   .triangle{
     display: none;
   }
   .circle{
+    display: none;
+  }
+}
+@media only screen and (max-width: 360px){
+  .square2{
+    display: block;
+  }
+  .square3{
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 361px) and (max-width: 375px){
+  .square3{
     display: none;
   }
 }
