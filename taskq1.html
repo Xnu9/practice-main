@@ -42,21 +42,21 @@ width: 17%;
     }
 
    
-    .square1 {
+    .redcolor {
 width: 100px;
 padding-block: 24px;
 height: 109px;
 background-color: #fc0800;
 position: relative;
 }
-.square2 {
+.yellowcolor {
 padding-block: 24px;
 width: 100px;
 height: 109px;
 background-color:  rgb(244 169 21 / 90%);
 position: relative;
 }
-.square3 {
+.greencolor {
 padding-block: 24px;
 width: 100px;
 height: 109px;
@@ -147,23 +147,27 @@ border-radius: 34px;
   }
 }
 @media only screen and (max-width: 360px){
-  .square2{
+  .yellowcolor{
     display: block;
   }
-  .square3{
+  .triangle{
+    display: block;
+    margin-left: -40px;
+  }
+  .greencolor{
     display: none;
   }
 
 }
-@media only screen and (min-width: 361px) and (max-width: 375px){
-  .square3{
+@media only screen and (min-width: 375px){
+  .triangle{
     display: none;
   }
-}
-@media only screen and (max-width: 375px){
-  .triangle{
+  .greencolor{
     display: block;
-    margin-left: -40px;
+  }
+  .yellowcolor{
+    display: none;
   }
 }
 .asdtext h3{
@@ -188,7 +192,7 @@ border-radius: 34px;
 <div class="container">
 
   
-  <div class="square1">
+  <div class="redcolor">
 
     <div class="triangle">
   </div> 
@@ -197,13 +201,13 @@ border-radius: 34px;
   </div> 
   </div>
 
-  <div class="square2">
+  <div class="yellowcolor">
     <div class="second">
       Second
     </div>
   </div>
 
-  <div class="square3">
+  <div class="greencolor">
     <div class="circle">
 <div class="circle1"> circle</div>
     </div>
