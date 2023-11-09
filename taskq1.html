@@ -55,6 +55,7 @@ width: 100px;
 height: 109px;
 background-color:  rgb(244 169 21 / 90%);
 position: relative;
+display: block;
 }
 .greencolor {
 padding-block: 24px;
@@ -119,7 +120,13 @@ border-radius: 34px;
   color: white;
     margin-top: 9px;
     text-align: center;
+}
 
+.asdtext{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 600px) {
   .main-section {
@@ -170,10 +177,10 @@ border-radius: 34px;
     display: none;
   }
 }
-.asdtext h3{
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
+@media only screen and (max-width: 2000px) and (min-width: 601px)  {
+.yellowcolor{
+  display: block;
+ }
 }
 
   </style>
@@ -222,6 +229,6 @@ border-radius: 34px;
     
 </div>
   </div>
-  <div class="asdtext"><h3>My Roll number is lif22bsc0873</h3></div>
+  <div class="asdtext">My Roll number is lif22bsc0873</div>
 </body>
 </html>
