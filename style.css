@@ -95,7 +95,11 @@ li a {
 }
 
 li a:hover {
+<<<<<<< HEAD
   background-color: #d6d1d1;
+=======
+  background-color: #000;
+>>>>>>> 0e1bf24 (slider update)
 }
 
 /* media query for negvation bar */
@@ -257,7 +261,15 @@ img {vertical-align: middle;}
 .slideshow-container {
   /* max-width: 1000px; */
   position: relative;
+<<<<<<< HEAD
   margin: auto;
+=======
+  margin-top: -53px;
+}
+.slideshow-container img{
+  height: 500px;
+  object-fit: cover;
+>>>>>>> 0e1bf24 (slider update)
 }
 
 /* Caption text */
