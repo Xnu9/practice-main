@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fish floating </title>
+</head>
+<style>
+body {
+  
+  margin: 0px;
+    background-color: rgb(255, 255, 255); /* Light blue background color for the ocean */
+}
+
+.fish {
+
+  width: 291px; /* Width of the fish */
+    height: 118px;
+    background-color: #edbd3d;/* Height of the fish */
+    border-radius: 120% 415% 632% 70% / 70% 68% 152% 151%; /* Fish body color (salmon) */
+    /* position: relative;Create a fish-like shape */
+    animation: swim 2s linear infinite alternate;/* Add swimming animation with alternate up-down motion */
+    transform: scaleX(-1);/* Flip the fish horizontally */
+}
+.water{
+  width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+    background-color: blue;
+}
+
+
+.cylinder {
+    width: 91px;
+    height: 99px;
+    background-color: #ebbe47;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: -4px;
+    right: -73px;
+    right: -71px;
+    transform: translateY(0) rotate(46deg);
+}
+.eye {
+
+  width: 25px;
+    height: 25px;
+    background-color: white; /* Eye color */
+    border-radius: 154%;/* Round eye shape */
+    position: absolute;
+    top: 69%;
+    left: 15%; /* Adjust the eye position */
+    transform: translate(-50%, -50%);
+}
+
+.pupil {
+    width: 12px; /* Width of the pupil */
+    height: 12px; /* Height of the pupil */
+    background-color: black; /* Pupil color */
+    border-radius: 50%; /* Round pupil shape */
+    position: absolute;
+    top: 63%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+.namebox {
+    font-family: math;
+    background-color: hotpink;
+    display: inline-flex;
+    align-items: baseline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(-20px, 0);
+    }
+    50% {
+        transform: translate(-20px, 60px); /* Move up */
+    }
+    100% {
+        transform: translate(-20px, 0);
+    }
+}
+
+</style>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!--  complete div of fish  -->
+      <div class="fish">
+        <div class="tail">
+<div class="cylinder"></div>
+        </div>
+          <div class="body">
+            
+              <div class="eye">
+                  <div class="pupil"></div>
+              </div>
+          </div>
+        </div>
+<!-- background water color  -->
+        <div class="water">
+
+        </div>
+<br><br>
+              <!-- dispaly name and rool number  -->
+        <div class="namebox">
+          <h2>Name:</h2><p>zainab khan</p>
+          <h2>Roll no:</h2><p>L1f22bscs0873</p>
+        </div>
+      
+  </body>
+  </html>
+  
+</body>
+</html>
