@@ -42,21 +42,22 @@ width: 17%;
     }
 
    
-    .square1 {
+    .redcolor {
 width: 100px;
 padding-block: 24px;
 height: 109px;
 background-color: #fc0800;
 position: relative;
 }
-.square2 {
+.yellowcolor {
 padding-block: 24px;
 width: 100px;
 height: 109px;
 background-color:  rgb(244 169 21 / 90%);
 position: relative;
+display: block;
 }
-.square3 {
+.greencolor {
 padding-block: 24px;
 width: 100px;
 height: 109px;
@@ -119,20 +120,77 @@ border-radius: 34px;
   color: white;
     margin-top: 9px;
     text-align: center;
+}
 
+.asdtext{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 600px) {
   .main-section {
-    gap: 100px;
+    gap: 20px;
   }
   .container{
-    width: auto;
-    gap: 35px;
+    width: 64%;
+    gap: 15px;
+    padding: 10px;
+  }
+  .circle{
+    display: none;
+  }
+  .triangle{
+    margin-left: -50px;
+  }
+  
+}
+@media only screen and (max-width: 375px) and (min-width: 359px)  {
+  .triangle{
+    display: none;
+  }
+  .circle{
+    display: none;
   }
 }
-@media only screen and (max-width: 599px) and (min-width: 360px)  {
-  .square3{
+@media only screen and (max-width: 360px){
+  .yellowcolor{
+    display: block;
+  }
+  .triangle{
+    display: block;
+    margin-left: -40px;
+  }
+  .greencolor{
     display: none;
+  }
+
+}
+@media only screen and (min-width: 375px){
+  .triangle{
+    display: none;
+  }
+  .greencolor{
+    display: block;
+  }
+  .yellowcolor{
+    display: none;
+  }
+}
+@media only screen and (max-width: 2000px) and (min-width: 601px)  {
+.yellowcolor{
+  display: block;
+ }
+ .triangle{
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .yellowcolor{
+    display: block;
+  }
+  .triangle{
+    display: block;
   }
 }
 
@@ -153,7 +211,7 @@ border-radius: 34px;
 <div class="container">
 
   
-  <div class="square1">
+  <div class="redcolor">
 
     <div class="triangle">
   </div> 
@@ -162,14 +220,13 @@ border-radius: 34px;
   </div> 
   </div>
 
-
-  <div class="square2">
+  <div class="yellowcolor">
     <div class="second">
       Second
     </div>
   </div>
 
-  <div class="square3">
+  <div class="greencolor">
     <div class="circle">
 <div class="circle1"> circle</div>
     </div>
@@ -180,14 +237,14 @@ border-radius: 34px;
   
     <div class="paralogram" > 
       <p class="forth">Forth</p>
+<<<<<<< HEAD
     
+=======
+>>>>>>> c3f5f544bc781d74df592569a678d7d73b6f932d
     </div>
     
 </div>
-
-
   </div>
-  
-
+  <div class="asdtext">My Roll number is lif22bsc0873</div>
 </body>
 </html>
