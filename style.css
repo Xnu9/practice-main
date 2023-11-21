@@ -544,6 +544,20 @@ box-sizing: border-box;
 
 
 }
+.imageOfHuracanEVOspyder{
+  background-image: url("/hura_evo_spy_02.webp");
+  height: 800px;
+  background-size: cover;
+
+
+}
+.imageOfSianFpk{
+  background-image: url("/icover.webp");
+  height: 800px;
+  background-size: cover;
+
+
+}
 .imageOfrevlto{
   background-image: url("/r2.webp");
   height: 800px;
