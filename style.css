@@ -104,11 +104,7 @@ li a {
 }
 
 li a:hover {
-<<<<<<< HEAD
   background-color: #d6d1d1;
-=======
-  background-color: #000;
->>>>>>> 0e1bf24 (slider update)
 }
 
 /* media query for negvation bar */
@@ -546,21 +542,60 @@ box-sizing: border-box;
 }
 .imageOfHuracanEVOspyder{
   background-image: url("/hura_evo_spy_02.webp");
-  height: 800px;
+  height: 968px;
+  background-size: cover;
+
+
+}
+.imageOfAsterion{
+  background-image: url("/as1.jpg");
+  height: 1052px;
+  background-size: cover;
+
+
+
+}
+.imageOfCountach{
+  background-image: url("b4.webp");
+  height: 999px;
+  background-size: cover;
+}
+
+.textsetCountch {
+  margin-top: 13px;
+  PADDING-TOP: 673px;
+  /* font-size: xx-large; */
+  padding-left: 182px;
+}
+
+
+
+.imageofownership{
+  background-image: url("oner1.jpg");
+  height: 1145px;
+  background-size: cover;
+}
+
+.terson{
+  padding-bottom: 99px;
+}
+.imageOfTrezon{
+  background-image: url("/sx1.png");
+  height: 877px;
   background-size: cover;
 
 
 }
 .imageOfSianFpk{
   background-image: url("/icover.webp");
-  height: 800px;
+   height: 992px;
   background-size: cover;
 
 
 }
 .imageOfrevlto{
   background-image: url("/r2.webp");
-  height: 800px;
+  height: 989px;
   background-size: cover;
 
 
@@ -572,22 +607,80 @@ box-sizing: border-box;
 
 
 }
+.imageOfcover{
+  background-image: url("/cr2.png");
+  height: 939px;
+  background-size: cover;
+
+
+}
 
 .imageOfURURS{
   background-image: url("/u2.png");
   
-  height: 1226px;
+  
+  height: 1386px;
   background-size: cover;
+ 
 
+
+}
+
+.textsetsianRoadster{
+
+  margin-top: 13px;
+  PADDING-TOP: 460px;
+  /* font-size: xx-large; */
+  padding-left: 56px;
 
 }
 .textset{
 
       margin-top: 13px;
-      PADDING-TOP: 372px;
+      PADDING-TOP: 300px;
       /* font-size: xx-large; */
-      padding-left: 55px;
+      padding-left: 56px;
   
+}
+.textsetUrus{
+
+  margin-top: 13px;
+  PADDING-TOP: 488px;
+  /* font-size: xx-large; */
+  padding-left: 56px;
+
+}
+.textsettrev{
+
+  margin-top: 13px;
+  PADDING-TOP: 140px;
+  /* font-size: xx-large; */
+  padding-left: 56px;
+
+}
+.textsetsto{
+
+  margin-top: 13px;
+  PADDING-TOP: 416px;
+  /* font-size: xx-large; */
+  padding-left: 56px;
+
+}
+.textsetCOVER{
+color: black;
+  margin-top: 13px;
+  PADDING-TOP:554px;
+  /* font-size: xx-large; */
+  padding-left: 56px;
+
+}
+.textset1{
+
+  margin-top: 13px;
+  PADDING-TOP:298px;
+  /* font-size: xx-large; */
+  padding-left: 55px;
+
 }
 .adjstNav{
 
@@ -621,7 +714,12 @@ box-sizing: border-box;
   padding-left: 110px;
   text-align: justify;
 }
-
+.textmangerAsterio {
+  display: inline-block;
+  padding-top: 132px;
+  padding-right: 30px;
+  padding-left: 191px;
+}
 .textofHura{
   background-color: white;
   margin-top: 70px;
