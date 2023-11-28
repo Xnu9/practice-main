@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-
-
-
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
 <link rel="stylesheet" href="style.css">
@@ -13,19 +13,18 @@
 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="body">
   <div>
     <div class="main">
     <div class="testflex">
-      <img src="logo-removebg-preview.png" alt="error"  class="imagestyle" >
+      <img src="pubic/images/logo-removebg-preview.png" alt="error"  class="imagestyle" >
       <div class="textcolor"><p>𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊</p></div>
       <div class="socailmedia" > 
         <a href="https://www.facebook.com/Lamborghini/" class="fa fa-facebook" target="_blank"></a>
@@ -122,44 +121,43 @@ If our Assistant is unable to find what you are looking for, please scroll down 
 
 </p>
 </div>
-<h1> Contact Us </h1>
+<div class="container mt-5">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required placeholder="Name shoild not be less then 9">
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required placeholder="Email should contain @">
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required placeholder="+92..... ">
+      </div>
+      <div class="form-group">
+          <label for="role">Role:</label>
+          <select class="form-control" id="role" name="role" required>
+              <option value="">Select a role</option>
+              <option value="customer">Customer</option>
+              <option value="vendor">Vendor</option>
+              <option value="employee">Employee</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+    </div>
 
-<label for="name"></label>
-<input type="text" name="name" id="name" placeholder="Name" class="textboxMargine">
+      <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+  </form>
 
-<label for="email"></label>
-<input type="text" name="email" id="email" placeholder="Email" class="textboxMargine">
-
-<label for="phone"></label>
-<input type="text" name="phone" id="phone" placeholder="Phone" class="textboxMargine">
-
-
-
-<label for="role" style="margin-bottom: 10px;  margin-left: 35px;">ROLE:</label>
-
-<label for="sale">Sale</label>
-<input type="radio"  name="buy" id="sale" >
-
-<label for="buy">Buy</label>
-<input type="radio"  name="buy" id="buy" >
-<br>
-<i class="fa fa-globe" style="font-size:24px; float: inline-start;"></i>
-  <select  class="textboxMargine" > 
-  <option value="sap">Spain</option>
-  <option value="chn">China</option>
-  <option value="dub">Dubai</option>
-  <option value="frac">France</option>
-  <option value="denmak">Denmark</option>
-  <option value="amrica">America</option>
-  
- </select>
 
  
-<textarea name="Message" id="text" cols="26" rows="5" placeholder="Query ?  (Optional)" class="textboxMargine"></textarea>
 
 
 
-<button class="textboxMargine btonsetting" style="margin-bottom: 143px;">Submit</button>
 
 
 
@@ -216,4 +214,59 @@ If our Assistant is unable to find what you are looking for, please scroll down 
  
  
  </footer>
- 
+
+ <!-- Bootstrap Alert for Error Messages -->
+ <div class="alert alert-danger mt-3" id="errorAlert" style="display:none;"></div>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+ <script>
+     function validateForm() {
+         // Reset error alert
+         document.getElementById('errorAlert').style.display = 'none';
+         document.getElementById('errorAlert').innerHTML = '';
+
+         // Validate Name
+         const name = document.getElementById('name').value;
+         if (!/^[a-zA-Z ]+$/.test(name)) {
+             displayError('Name should contain only characters.');
+             return;
+         }
+
+         // Validate Email
+         const email = document.getElementById('email').value;
+         if (!/\S+@\S+\.\S+/.test(email) || email.length < 9) {
+             displayError('Invalid email format or length.');
+             return;
+         }
+
+         // Validate Phone
+         const phone = document.getElementById('phone').value;
+         if (phone.length < 10 || !phone.includes('+92')) {
+             displayError('Invalid phone number format or length.');
+             return;
+         }
+
+         // Validate Role
+         const role = document.getElementById('role').value;
+         if (role === '') {
+             displayError('Please select a role.');
+             return;
+         }
+
+         // If all validations pass, submit the form (you can replace this with your form submission logic)
+         document.getElementById('contactForm').submit();
+     }
+
+     function displayError(message) {
+         // Display error message in the alert div
+         const errorAlert = document.getElementById('errorAlert');
+         errorAlert.innerHTML = message;
+         errorAlert.style.display = 'block';
+     }
+ </script>
+</div>
+
+</body>
+</html>

@@ -266,20 +266,19 @@ img {vertical-align: middle;}
 .slideshow-container {
   /* max-width: 1000px; */
   position: relative;
-<<<<<<< HEAD
+
   margin: auto;
-=======
+
   margin-top: -53px;
 }
 .slideshow-container img{
-<<<<<<< HEAD
-  height: 500px;
+
+  height: 780px;
   object-fit: cover;
->>>>>>> 0e1bf24 (slider update)
-=======
+
   height: 700px;
   object-fit:cover;
->>>>>>> 233d38f (xZxZxZx)
+
 }
 
 
@@ -534,21 +533,21 @@ box-sizing: border-box;
 
 /* models pics backgron */
 .imageOfHucansto{
-  background-image: url("/hsMainPic.webp");
+  background-image: url("/pubic/images/hsMainPic.webp");
   height: 800px;
   background-size: cover;
 
 
 }
 .imageOfHuracanEVOspyder{
-  background-image: url("/hura_evo_spy_02.webp");
+  background-image: url("/pubic/images/hura_evo_spy_02.webp");
   height: 968px;
   background-size: cover;
 
 
 }
 .imageOfAsterion{
-  background-image: url("/as1.jpg");
+  background-image: url("/pubic/images/as1.jpg");
   height: 1052px;
   background-size: cover;
 
@@ -556,7 +555,7 @@ box-sizing: border-box;
 
 }
 .imageOfCountach{
-  background-image: url("b4.webp");
+  background-image: url("/pubic/images/b4.webp");
   height: 999px;
   background-size: cover;
 }
@@ -576,7 +575,7 @@ box-sizing: border-box;
 
 
 .imageofownership{
-  background-image: url("oner1.jpg");
+  background-image: url("/pubic/images/oner1.jpg");
   height: 1145px;
   background-size: cover;
 }
@@ -585,35 +584,35 @@ box-sizing: border-box;
   padding-bottom: 99px;
 }
 .imageOfTrezon{
-  background-image: url("/sx1.png");
+  background-image: url("/pubic/images/sx1.png");
   height: 877px;
   background-size: cover;
 
 
 }
 .imageOfSianFpk{
-  background-image: url("/icover.webp");
+  background-image: url("/pubic/images/icover.webp");
    height: 992px;
   background-size: cover;
 
 
 }
 .imageOfrevlto{
-  background-image: url("/r2.webp");
+  background-image: url("/pubic/images/r2.webp");
   height: 989px;
   background-size: cover;
 
 
 }
 .imageOfSianRoadster{
-  background-image: url("/s1.webp");
+  background-image: url("/pubic/images/s1.webp");
   height: 800px;
   background-size: cover;
 
 
 }
 .imageOfcover{
-  background-image: url("/cr2.png");
+  background-image: url("/pubic/images/cr2.png");
   height: 939px;
   background-size: cover;
 
@@ -621,7 +620,7 @@ box-sizing: border-box;
 }
 
 .imageOfURURS{
-  background-image: url("/u2.png");
+  background-image: url("/pubic/images/u2.png");
   
   
   height: 1386px;
