@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export const arr= [
+=======
+export const myArr= [
+>>>>>>> 56e4b17 (update)
     {
         id:1,
         img: '/urus_s_03.webp',
